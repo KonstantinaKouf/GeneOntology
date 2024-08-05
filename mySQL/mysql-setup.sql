@@ -504,7 +504,6 @@ WHERE GO_ID="GO:0050901";
 SELECT Definition
 FROM go_terms WHERE GO_ID ="GO:0050901";
 
-#INNER JOIN go_annotations ON go_terms.GO_ID = go_annotations.GO_terms;
 
 SELECT GeneProduct_Symbol,Name,GO_ID
 FROM go_terms
