@@ -1,0 +1,82 @@
+//Terms connected to the Gene-Product Node with Symbol “TNF”
+MATCH (G1:GENE_PRODUCT)-[:Involved_in]->(T1:GO_TERM)
+WHERE G1.Symbol="TNF"
+RETURN G1,T1 as TNF_TERMS
+
+//delete property from  Gene-Product  
+MATCH (G1:GENE_PRODUCT {Symbol: "TNF"})
+SET G1.Synonyms = [synonym IN G1.Synonyms WHERE synonym <> "TNLG1F"]
+
+MATCH (G2:GENE_PRODUCT{Symbol: "Trp53", ID:22059, Type: "protein coding", Synonyms:["bbl","bfy","bhy","p44","p53","Tp53"]
+})
+REMOVE G2.Type
+RETURN G2
+
+//pathway between 2 genes
+MATCH (G1:GENE_PRODUCT{Symbol:"POLH"})-[*]-(T1:GO_TERM)-[*]-(G2:GENE_PRODUCT{Symbol:"polA"})
+RETURN G1,T1,G2
+
+//shortestPath
+MATCH p=shortestPath((G1:GENE_PRODUCT{Symbol:"POLH"})-[*]-(G2:GENE_PRODUCT{Symbol:"polA"}))
+RETURN p
+
+//Create subGraphs
+CALL gds.graph.project('myGraph', ['GENE_PRODUCT','GO_TERM'], 'Involved_in')
+
+CALL gds.graph.project('graphterms', 'GO_TERM',['Involved_in','is_a','Occurs_in','Part_of','Capable_of'])
+
+// Node Similarity
+CALL gds.nodeSimilarity.stream('myGraph')
+YIELD node1, node2, similarity
+RETURN gds.util.asNode(node1).Symbol AS NodeA, gds.util.asNode(node2).Symbol AS NodeB, similarity
+ORDER BY similarity DESCENDING, NodeA,NodeB
+
+// Ιnfluence maximization
+CALL gds.influenceMaximization.celf.stream('myGraph', {seedSetSize: 3,concurrency: 4 })
+YIELD nodeId, spread
+RETURN gds.util.asNode(nodeId).Symbol AS Gene_Symbol, spread
+ORDER BY spread DESC, Gene_Symbol ASC
+
+//PageRank 
+CALL gds.pageRank.stream('myGraph')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).Name  AS Name, score
+ORDER BY score DESC, Name 
+LIMIT 6
+
+
+//Hyperlink-Induced Topic Search (HITS)
+CALL gds.alpha.hits.stream('graphterms', {hitsIterations: 5})
+YIELD nodeId, values
+RETURN gds.util.asNode(nodeId).Name AS name, values.auth AS auth, values.hub as hub
+ORDER BY auth DESC
+//ORDER BY hub DESC
+
+// Betweenness Centrality
+CALL gds.betweenness.stream('graphterms')
+YIELD nodeId, score
+RETURN gds.util.asNode(nodeId).Name AS name, score
+ORDER BY score DESC
+LIMIT 3
+
+//Delete subgraphs
+CALL gds.graph.drop('myGraph' )
+CALL gds.graph.exists('myGraph') YIELD exists
+RETURN exists
+
+CALL gds.graph.drop('graphterms')
+CALL gds.graph.exists('graphterms') YIELD exists
+RETURN exists
+
+
+
+
+
+
+
+
+
+
+
+
+
