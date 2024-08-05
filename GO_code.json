@@ -1,0 +1,619 @@
+﻿[
+  {
+    "BamE": {
+      "identity": 175,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Synonyms": [
+          "b2617",
+          "ECK2613",
+          "smqA"
+        ],
+        "Type": "Gene",
+        "Symbol": "BamE",
+        "ID": 945583
+      },
+      "elementId": "175"
+    },
+    "Bam_protein_complex": {
+      "identity": 205,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "OMP complex",
+        "Definition": "Protein complex which is involved in assembly and insertion of beta-barrel proteins into the outer membrane. In E. coli it is composed of BamABCDE, of the outer membrane protein BamA, and four lipoproteins BamB, BamC, BamD, and BamE. BamA interacts directly with BamB and the BamCDE subcomplex.",
+        "ID": "GO:1990063",
+        "Name": "Bam protein complex"
+      },
+      "elementId": "205"
+    },
+    "DNA_directed_DNA_polymerase_activity": {
+      "identity": 204,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "DNA duplicase activity, DNA nucleotidyltransferase (DNA-directed) activity",
+        "Definition": "Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a DNA template and a 3'hydroxyl group",
+        "ID": "GO:0003887",
+        "Name": "DNA-directed DNA polymerase activity"
+      },
+      "elementId": "204"
+    },
+    "DNA_metabolic_process": {
+      "identity": 184,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": [
+          "DNA metabolism",
+          "cellular DNA metabolism"
+        ],
+        "Definition": "Any cellular metabolic process involving deoxyribonucleic acid. This is one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides. Source: ISBN:0198506732",
+        "ID": "GO:0006259",
+        "Name": "DNA metabolic process"
+      },
+      "elementId": "184"
+    },
+    "DNA_polymerase_activity": {
+      "identity": 196,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "DNA nucleotidyltransferase activity",
+        "Definition": "Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a nucleic acid template and a 3'hydroxyl group.",
+        "ID": "GO:0034061",
+        "Name": "DNA polymerase activity"
+      },
+      "elementId": "196"
+    },
+    "DNA_replication": {
+      "identity": 194,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "The cellular metabolic process in which a cell duplicates one or more molecules of DNA. DNA replication begins when specific sequences, known as origins of replication, are recognized and bound by the origin recognition complex, and ends when the original DNA molecule has been completely duplicated and the copies topologically separated. The unit of replication usually corresponds to the genome of the cell, an organelle, or a virus. The template for replication can either be an existing DNA molecule or RNA. ",
+        "ID": "GO:0006260",
+        "Name": "DNA replication"
+      },
+      "elementId": "194"
+    },
+    "Ecoli": {
+      "identity": 173,
+      "labels": [
+        "ORGANISM"
+      ],
+      "properties": {
+        "Synonyms": "E.coli",
+        "Taxa_ID": 562,
+        "Name": "Escherichia coli"
+      },
+      "elementId": "173"
+    },
+    "G1": {
+      "identity": 177,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Synonyms": [
+          "DIF",
+          "TNFA",
+          "TNFSF2",
+          "TNLG1F",
+          "TNF-alpha"
+        ],
+        "Type": "Gene",
+        "Symbol": "TNF",
+        "ID": 7124
+      },
+      "elementId": "177"
+    },
+    "G3": {
+      "identity": 178,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Synonyms": [
+          "Q1",
+          "LAM1",
+          "LEU8"
+        ],
+        "Type": "Gene",
+        "Symbol": "SELL",
+        "ID": 6402
+      },
+      "elementId": "178"
+    },
+    "G5": {
+      "identity": 179,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Type": "Gene_complex",
+        "Symbol": "fibrin-clot_human",
+        "ID": "CPX-6230"
+      },
+      "elementId": "179"
+    },
+    "L_carnitine_CoA_transferas_activity": {
+      "identity": 183,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": [
+          "L-carnitine hydro-lyase activity",
+          "L-carnitine dehydratase activity"
+        ],
+        "Definition": "Catalysis of the reactions: (E)-4-(trimethylammonio)but-2-enoyl-CoA + L-carnitine = (E)-4-(trimethylammonio)but-2-enoate + L-carnitinyl-CoA and 4-trimethylammoniobutanoyl-CoA + L-carnitine = 4-trimethylammoniobutanoate + L-carnitinyl-CoA. PMID:7815937 PMID:8188598",
+        "ID": "GO:0008735",
+        "Name": "L-carnitine CoA-transferase activity"
+      },
+      "elementId": "183"
+    },
+    "O1": {
+      "identity": 171,
+      "labels": [
+        "ORGANISM"
+      ],
+      "properties": {
+        "Synonyms": "Human",
+        "Taxa_ID": 9606,
+        "Name": "Homo Sapiens"
+      },
+      "elementId": "171"
+    },
+    "O2": {
+      "identity": 172,
+      "labels": [
+        "ORGANISM"
+      ],
+      "properties": {
+        "Synonyms": "House mouse",
+        "Taxa_ID": 10090,
+        "Name": "Mus musculus"
+      },
+      "elementId": "172"
+    },
+    "T1": {
+      "identity": 185,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "response to social isolation",
+        "Definition": "Any process that results in a change in state or activity of a cell or an organism (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of a lack of contact with other members of the same species.",
+        "ID": "GO:0035900",
+        "Name": "response to isolation stress"
+      },
+      "elementId": "185"
+    },
+    "T10": {
+      "identity": 190,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "Transient adhesive interactions between leukocytes and endothelial cells lining blood vessels. Carbohydrates on circulating leukocytes bind selectins on the vessel wall causing the leukocytes to slow down and roll along the inner surface of the vessel wall. During this rolling motion, transitory bonds are formed and broken between selectins and their ligands. Typically the first step in cellular extravasation (the movement of leukocytes out of the circulatory system, towards the site of tissue damage or infection)",
+        "ID": "GO:0050901",
+        "Name": "leukocyte tethering or rolling"
+      },
+      "elementId": "190"
+    },
+    "T11": {
+      "identity": 191,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "immune cell cellular extravasation, leucocyte cellular extravasation",
+        "Definition": "The migration of a leukocyte from the blood vessels into the surrounding tissue",
+        "ID": "GO:0045123",
+        "Name": "cellular extravasation"
+      },
+      "elementId": "191"
+    },
+    "T12": {
+      "identity": 200,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "calcium ion storage activity",
+        "Definition": "Binding to a calcium ion (Ca2+).",
+        "ID": "GO:0005509",
+        "Name": "calcium ion binding"
+      },
+      "elementId": "200"
+    },
+    "T13": {
+      "identity": 209,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "intercellular space",
+        "Definition": "That part of a multicellular organism outside the cells proper, usually taken to be outside the plasma membranes, and occupied by fluid.",
+        "ID": "GO:0005615",
+        "Name": "extracellular space"
+      },
+      "elementId": "209"
+    },
+    "T14": {
+      "identity": 192,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "A protein activation cascade that contributes to blood coagulation and consists of the cascade of enzymatic reactions initiated by physical damage to the wall of a blood vessel, leading to the formation of a formation of a fibrin clot at the site of the injury. The process also includes numerous positive and negative regulatory events.",
+        "ID": "GO:0072378",
+        "Name": "blood coagulation, fibrin clot formation"
+      },
+      "elementId": "192"
+    },
+    "T15": {
+      "identity": 193,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "protein activation pathway",
+        "Definition": "A sequential series of modifications to a set of proteins where the product of one reaction catalyzes the following reaction, ultimately leading to the generation of a mature protein. Modifications typically include proteolysis or covalent modification, and may also include binding events.",
+        "ID": "GO:0072376",
+        "Name": "protein activation cascade"
+      },
+      "elementId": "193"
+    },
+    "T18": {
+      "identity": 210,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "cell membrane, cellular membrane",
+        "Definition": "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins.",
+        "ID": "GO:0005886",
+        "Name": "plasma membrane"
+      },
+      "elementId": "210"
+    },
+    "T19": {
+      "identity": 211,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "The transfer of electrons through a series of electron donors and acceptors, generating energy that is ultimately used for synthesis of ATP in the plasma membrane.",
+        "ID": "GO:0042774",
+        "Name": "plasma membrane ATP synthesis coupled electron transport"
+      },
+      "elementId": "211"
+    },
+    "T2": {
+      "identity": 186,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "response to abiotic stress, response to biotic stress",
+        "Definition": "Any process that results in a change in state or activity of a cell or an organism (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation). ",
+        "ID": "GO:0006950",
+        "Name": "response to stress"
+      },
+      "elementId": "186"
+    },
+    "T21": {
+      "identity": 201,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "autocrine activity, paracrine activity",
+        "Definition": "The activity of a soluble extracellular gene product that interacts with a receptor to effect a change in the activity of the receptor to control the survival, growth, differentiation and effector function of tissues and cells.",
+        "ID": "GO:0005125",
+        "Name": "cytokine activity"
+      },
+      "elementId": "201"
+    },
+    "T22": {
+      "identity": 202,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "isoform-specific homophilic binding, protein homopolymerization",
+        "Definition": "Binding to an identical protein or proteins.",
+        "ID": "GO:0042802",
+        "Name": "identical protein binding"
+      },
+      "elementId": "202"
+    },
+    "T23": {
+      "identity": 203,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "signaling molecule, signaling receptor ligand activity",
+        "Definition": "The activity of a gene product that interacts with a receptor to effect a change in the activity of the receptor. Ligands may be produced by the same, or different, cell that expresses the receptor. Ligands may diffuse extracellularly from their point of origin to the receiving cell, or remain attached to an adjacent cell surface (e.g. Notch ligands).",
+        "ID": "GO:0048018",
+        "Name": "receptor ligand activity"
+      },
+      "elementId": "203"
+    },
+    "T24": {
+      "identity": 212,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "cell associated, cell bound",
+        "Definition": "The external part of the cell wall and/or plasma membrane.",
+        "ID": "GO:0009986",
+        "Name": "cell surface"
+      },
+      "elementId": "212"
+    },
+    "T3": {
+      "identity": 187,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "retention of triacylglycerol, retention of triglyceride, sequestering of triacylglycerol",
+        "Definition": "The process of binding or confining any triester of glycerol such that it is separated from other components of a biological system.",
+        "ID": "GO:0030730",
+        "Name": "sequestering of triglyceride"
+      },
+      "elementId": "187"
+    },
+    "T4": {
+      "identity": 188,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Definition": "Any process that results in a change in state or activity of a cell (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of an amino acid stimulus. An amino acid is a carboxylic acids containing one or more amino groups.",
+        "ID": "GO:0071230",
+        "Name": "cellular response to amino acid stimulus"
+      },
+      "elementId": "188"
+    },
+    "T5": {
+      "identity": 189,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Definition": "Any process that results in a change in state or activity of a cell (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of an oxygen-containing compound stimulus",
+        "ID": "GO:1901701",
+        "Name": "cellular response to oxygen-containing compound"
+      },
+      "elementId": "189"
+    },
+    "T7": {
+      "identity": 198,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Definition": "Binding to a sialic acid, a N- or O- substituted derivative of neuraminic acid, a nine carbon monosaccharide. Sialic acids often occur in polysaccharides, glycoproteins, and glycolipids in animals and bacteria. ",
+        "ID": "GO:0033691",
+        "Name": "sialic acid binding"
+      },
+      "elementId": "198"
+    },
+    "T8": {
+      "identity": 199,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Definition": "Binding to a carbohydrate, which includes monosaccharides, oligosaccharides and polysaccharides as well as substances derived from monosaccharides by reduction of the carbonyl group (alditols), by oxidation of one or more hydrox",
+        "Synonym": "sugar binding, selectin",
+        "ID": "GO:0030246",
+        "Name": "carbohydrate binding"
+      },
+      "elementId": "199"
+    },
+    "T9": {
+      "identity": 208,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "galectin-1 complex, galectin-2 complex",
+        "Definition": "A homodimeric protein complex that is capable of binding a range of carbohydrates and is involved in anti-inflammatory and pro-apoptotic processes.",
+        "ID": "GO:1990724",
+        "Name": "galectin complex"
+      },
+      "elementId": "208"
+    },
+    "caiB": {
+      "identity": 174,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Synonyms": [
+          "b0038",
+          "ECK0039",
+          "yaaN"
+        ],
+        "Type": "Gene",
+        "Symbol": "caiB",
+        "ID": 948997
+      },
+      "elementId": "174"
+    },
+    "cardiolipin_binding": {
+      "identity": 195,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "Binding to cardiolipin.",
+        "ID": "GO:1901612",
+        "Name": "cardiolipin_binding"
+      },
+      "elementId": "195"
+    },
+    "carnitine_catabolic_process": {
+      "identity": 182,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "carnitine degradation",
+        "Definition": "The chemical reactions and pathways resulting in the breakdown of carnitine (hydroxy-trimethyl aminobutyric acid), a compound that participates in the transfer of acyl groups across the inner mitochondrial membrane",
+        "ID": "GO:0042413",
+        "Name": "carnitine catabolic process"
+      },
+      "elementId": "182"
+    },
+    "catalytic_activity": {
+      "identity": 197,
+      "labels": [
+        "GO_TERM",
+        "MOLECULAR_FUNCTION"
+      ],
+      "properties": {
+        "Synonyms": "enzyme activity",
+        "Definition": "Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.",
+        "ID": "GO:0003824",
+        "Name": "catalytic activity"
+      },
+      "elementId": "197"
+    },
+    "cytoplasm": {
+      "identity": 207,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "The contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.",
+        "ID": "GO:0005737",
+        "Name": "cytoplasm"
+      },
+      "elementId": "207"
+    },
+    "cytosol": {
+      "identity": 213,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "None",
+        "Definition": "The part of the cytoplasm that does not contain organelles but which does contain other particulate matter, such as protein complexes. ",
+        "ID": "GO:0005829",
+        "Name": "cytosol"
+      },
+      "elementId": "213"
+    },
+    "periplasmic_side": {
+      "identity": 206,
+      "labels": [
+        "CELLULAR_COMPONENT",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": [
+          "internal leaflet of cell outer membrane",
+          "internal side of cell outer membrane"
+        ],
+        "Definition": "The side (leaflet) of the outer membrane that faces the periplasm of the cell.",
+        "ID": "GO:0031241",
+        "Name": "periplasmic side of cell outer membrane"
+      },
+      "elementId": "206"
+    },
+    "polA": {
+      "identity": 176,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Synonyms": [
+          "b3863",
+          "ECK3855",
+          "resA"
+        ],
+        "Type": "Gene",
+        "Symbol": "polA",
+        "ID": 948356
+      },
+      "elementId": "176"
+    },
+    "polH": {
+      "identity": 180,
+      "labels": [
+        "GENE_PRODUCT"
+      ],
+      "properties": {
+        "Type": "Gene",
+        "Symbol": "POLH",
+        "ID": 5429
+      },
+      "elementId": "180"
+    },
+    "protein_insertion_inmembrane": {
+      "identity": 181,
+      "labels": [
+        "BIOLOGICAL_PROCESS",
+        "GO_TERM"
+      ],
+      "properties": {
+        "Synonyms": "protein-membrane insertion",
+        "Definition": "The process that results in the incorporation of a protein into a biological membrane. Incorporation in this context means having some part or covalently attached group that is inserted into the the hydrophobic region of one or both bilayers.",
+        "ID": "GO:0051205",
+        "Name": "protein insertion in to membrane"
+      },
+      "elementId": "181"
+    }
+  }
+]
