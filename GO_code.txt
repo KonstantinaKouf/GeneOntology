@@ -1,0 +1,223 @@
+//Organism nodes
+CREATE (O1:ORGANISM{Name:"Homo Sapiens",Taxa_ID:9606,Synonyms:"Human"})
+CREATE (O2:ORGANISM{Name:"Mus musculus",Taxa_ID:10090 ,Synonyms:"House mouse"})
+CREATE (Ecoli:ORGANISM{Name: "Escherichia coli", Taxa_ID: 562, Synonyms: "E.coli"})
+
+
+//Gene product nodes:
+CREATE (caiB:GENE_PRODUCT {Symbol: "caiB",ID:948997,Type:"Gene",Synonyms: ["b0038", "ECK0039", "yaaN"]})
+CREATE (BamE:GENE_PRODUCT{Symbol: "BamE",ID:945583,Type:"Gene",Synonyms:["b2617", "ECK2613", "smqA"]})
+CREATE(polA:GENE_PRODUCT{Symbol:"polA",ID:948356, Type:"Gene",Synonyms:["b3863","ECK3855","resA"]})
+CREATE (G1:GENE_PRODUCT{Symbol: "TNF",ID:7124,Type:"Gene",Synonyms:["DIF","TNFA","TNFSF2","TNLG1F", "TNF-alpha"]})
+CREATE (G3:GENE_PRODUCT{Symbol: "SELL",ID:6402,Type:"Gene",Synonyms:["Q1","LAM1","LEU8"]})
+CREATE (G5:GENE_PRODUCT{Symbol: "fibrin-clot_human",ID:"CPX-6230",Type:"Gene_complex"})
+CREATE (polH:GENE_PRODUCT{Symbol:"POLH",ID:5429,Type:"Gene"})
+
+
+
+
+
+
+
+
+CREATE (protein_insertion_inmembrane:GO_TERM:BIOLOGICAL_PROCESS{Name:"protein insertion in to membrane",ID:"GO:0051205",Definition:"The process that results in the incorporation of a protein into a biological membrane. Incorporation in this context means having some part or covalently attached group that is inserted into the the hydrophobic region of one or both bilayers.",Synonyms:"protein-membrane insertion"})
+
+
+
+
+
+
+CREATE (carnitine_catabolic_process:GO_TERM:BIOLOGICAL_PROCESS{Name:"carnitine catabolic process",ID:"GO:0042413",Definition:"The chemical reactions and pathways resulting in the breakdown of carnitine (hydroxy-trimethyl aminobutyric acid), a compound that participates in the transfer of acyl groups across the inner mitochondrial membrane",Synonyms:"carnitine degradation"})
+
+
+CREATE (L_carnitine_CoA_transferas_activity:GO_TERM:BIOLOGICAL_PROCESS{
+  Name: "L-carnitine CoA-transferase activity",
+  ID: "GO:0008735",
+  Definition: "Catalysis of the reactions: (E)-4-(trimethylammonio)but-2-enoyl-CoA + L-carnitine = (E)-4-(trimethylammonio)but-2-enoate + L-carnitinyl-CoA and 4-trimethylammoniobutanoyl-CoA + L-carnitine = 4-trimethylammoniobutanoate + L-carnitinyl-CoA. PMID:7815937 PMID:8188598",
+  Synonyms: ["L-carnitine hydro-lyase activity", "L-carnitine dehydratase activity"]
+})
+CREATE(DNA_metabolic_process:GO_TERM:BIOLOGICAL_PROCESS{Name:"DNA metabolic process", ID:"GO:0006259",Definition:"Any cellular metabolic process involving deoxyribonucleic acid. This is one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides. Source: ISBN:0198506732",Synonyms:["DNA metabolism","cellular DNA metabolism"]})
+
+
+CREATE (T1:GO_TERM:BIOLOGICAL_PROCESS{Name:"response to isolation stress",ID:"GO:0035900",Definition:"Any process that results in a change in state or activity of a cell or an organism (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of a lack of contact with other members of the same species.",Synonyms:"response to social isolation"})
+
+
+CREATE (T2:GO_TERM:BIOLOGICAL_PROCESS{Name:"response to stress",ID:"GO:0006950",Definition:"Any process that results in a change in state or activity of a cell or an organism (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation). ",Synonyms:"response to abiotic stress, response to biotic stress"})
+
+
+CREATE (T3:GO_TERM:BIOLOGICAL_PROCESS{Name:"sequestering of triglyceride",ID:"GO:0030730",Definition:"The process of binding or confining any triester of glycerol such that it is separated from other components of a biological system.",Synonyms:"retention of triacylglycerol, retention of triglyceride, sequestering of triacylglycerol"})
+
+
+CREATE (T4:GO_TERM:BIOLOGICAL_PROCESS{Name:"cellular response to amino acid stimulus",ID:"GO:0071230",Definition:"Any process that results in a change in state or activity of a cell (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of an amino acid stimulus. An amino acid is a carboxylic acids containing one or more amino groups."})
+
+
+CREATE (T5:GO_TERM:BIOLOGICAL_PROCESS{Name:"cellular response to oxygen-containing compound",ID:"GO:1901701",Definition:"Any process that results in a change in state or activity of a cell (in GO_TERMs of movement, secretion, enzyme production, gene expression, etc.) as a result of an oxygen-containing compound stimulus"})
+
+
+
+
+CREATE (T10:GO_TERM:BIOLOGICAL_PROCESS{Name:"leukocyte tethering or rolling",ID:"GO:0050901",Synonyms:"None",Definition:"Transient adhesive interactions between leukocytes and endothelial cells lining blood vessels. Carbohydrates on circulating leukocytes bind selectins on the vessel wall causing the leukocytes to slow down and roll along the inner surface of the vessel wall. During this rolling motion, transitory bonds are formed and broken between selectins and their ligands. Typically the first step in cellular extravasation (the movement of leukocytes out of the circulatory system, towards the site of tissue damage or infection)"})
+
+
+CREATE (T11:GO_TERM:BIOLOGICAL_PROCESS{Name:"cellular extravasation",ID:"GO:0045123",Synonyms:"immune cell cellular extravasation, leucocyte cellular extravasation",Definition:"The migration of a leukocyte from the blood vessels into the surrounding tissue"})
+
+
+CREATE (T14:GO_TERM:BIOLOGICAL_PROCESS{Name:"blood coagulation, fibrin clot formation",ID:"GO:0072378",Synonyms:"None",Definition:"A protein activation cascade that contributes to blood coagulation and consists of the cascade of enzymatic reactions initiated by physical damage to the wall of a blood vessel, leading to the formation of a formation of a fibrin clot at the site of the injury. The process also includes numerous positive and negative regulatory events." })
+
+
+CREATE (T15:GO_TERM:BIOLOGICAL_PROCESS{Name:"protein activation cascade",ID:"GO:0072376",Synonyms:"protein activation pathway",Definition:"A sequential series of modifications to a set of proteins where the product of one reaction catalyzes the following reaction, ultimately leading to the generation of a mature protein. Modifications typically include proteolysis or covalent modification, and may also include binding events."})
+
+
+
+
+
+
+
+
+CREATE (DNA_replication:GO_TERM:BIOLOGICAL_PROCESS{Name:"DNA replication",ID:"GO:0006260",Synonyms:"None",Definition:"The cellular metabolic process in which a cell duplicates one or more molecules of DNA. DNA replication begins when specific sequences, known as origins of replication, are recognized and bound by the origin recognition complex, and ends when the original DNA molecule has been completely duplicated and the copies topologically separated. The unit of replication usually corresponds to the genome of the cell, an organelle, or a virus. The template for replication can either be an existing DNA molecule or RNA. "})
+
+
+//Go term nodes/molecular function
+CREATE(cardiolipin_binding:GO_TERM:MOLECULAR_FUNCTION{Name:"cardiolipin_binding",ID:"GO:1901612",Definition:"Binding to cardiolipin.",Synonyms:"None"})
+
+
+
+
+CREATE(DNA_polymerase_activity:GO_TERM:MOLECULAR_FUNCTION{Name:"DNA polymerase activity",ID:"GO:0034061",Definition:"Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a nucleic acid template and a 3'hydroxyl group.",Synonyms:"DNA nucleotidyltransferase activity"})
+
+
+CREATE (catalytic_activity:GO_TERM:MOLECULAR_FUNCTION{Name:"catalytic activity",ID:"GO:0003824",Definition:"Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.",Synonyms:"enzyme activity"})
+
+
+CREATE (T7:GO_TERM:MOLECULAR_FUNCTION{Name:"sialic acid binding",ID:"GO:0033691",Definition:"Binding to a sialic acid, a N- or O- substituted derivative of neuraminic acid, a nine carbon monosaccharide. Sialic acids often occur in polysaccharides, glycoproteins, and glycolipids in animals and bacteria. "})
+
+
+CREATE (T8:GO_TERM:MOLECULAR_FUNCTION{Name:"carbohydrate binding",ID:"GO:0030246",Synonym:"sugar binding, selectin",Definition:"Binding to a carbohydrate, which includes monosaccharides, oligosaccharides and polysaccharides as well as substances derived from monosaccharides by reduction of the carbonyl group (alditols), by oxidation of one or more hydrox"})
+
+
+CREATE (T12:GO_TERM:MOLECULAR_FUNCTION{Name:"calcium ion binding",ID:"GO:0005509",Synonyms:"calcium ion storage activity",Definition:"Binding to a calcium ion (Ca2+)."})
+
+
+CREATE (T21:GO_TERM:MOLECULAR_FUNCTION{Name:"cytokine activity",ID:"GO:0005125",Synonyms:"autocrine activity, paracrine activity",Definition:"The activity of a soluble extracellular gene product that interacts with a receptor to effect a change in the activity of the receptor to control the survival, growth, differentiation and effector function of tissues and cells."})
+
+
+CREATE (T22:GO_TERM:MOLECULAR_FUNCTION{Name:"identical protein binding",ID:"GO:0042802",Synonyms:"isoform-specific homophilic binding, protein homopolymerization",Definition:"Binding to an identical protein or proteins." })
+
+
+CREATE (T23:GO_TERM:MOLECULAR_FUNCTION{Name:"receptor ligand activity",ID:"GO:0048018",Synonyms:"signaling molecule, signaling receptor ligand activity", Definition:"The activity of a gene product that interacts with a receptor to effect a change in the activity of the receptor. Ligands may be produced by the same, or different, cell that expresses the receptor. Ligands may diffuse extracellularly from their point of origin to the receiving cell, or remain attached to an adjacent cell surface (e.g. Notch ligands)."})
+
+
+CREATE (DNA_directed_DNA_polymerase_activity:GO_TERM:MOLECULAR_FUNCTION{Name:"DNA-directed DNA polymerase activity",ID:"GO:0003887",Synonyms:"DNA duplicase activity, DNA nucleotidyltransferase (DNA-directed) activity",Definition:"Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a DNA template and a 3'hydroxyl group"})
+
+
+
+
+//Go term nodes/cellular component
+CREATE (Bam_protein_complex:GO_TERM:CELLULAR_COMPONENT{Name: "Bam protein complex", ID:"GO:1990063", Definition: "Protein complex which is involved in assembly and insertion of beta-barrel proteins into the outer membrane. In E. coli it is composed of BamABCDE, of the outer membrane protein BamA, and four lipoproteins BamB, BamC, BamD, and BamE. BamA interacts directly with BamB and the BamCDE subcomplex.", Synonyms: "OMP complex" })
+
+
+CREATE (periplasmic_side:GO_TERM:CELLULAR_COMPONENT{Name: "periplasmic side of cell outer membrane", ID:"GO:0031241", Definition: "The side (leaflet) of the outer membrane that faces the periplasm of the cell.", Synonyms:["internal leaflet of cell outer membrane" ,"internal side of cell outer membrane"]})
+
+
+CREATE (cytoplasm:GO_TERM:CELLULAR_COMPONENT{Name: "cytoplasm", ID:"GO:0005737", Definition: "The contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.", Synonyms:"None"})
+
+
+CREATE (T9:GO_TERM:CELLULAR_COMPONENT{Name:"galectin complex",ID:"GO:1990724",Synonyms:"galectin-1 complex, galectin-2 complex",Definition:"A homodimeric protein complex that is capable of binding a range of carbohydrates and is involved in anti-inflammatory and pro-apoptotic processes." })
+
+
+CREATE (T13:GO_TERM:CELLULAR_COMPONENT{Name:"extracellular space",ID:"GO:0005615",Synonyms:"intercellular space",Definition:"That part of a multicellular organism outside the cells proper, usually taken to be outside the plasma membranes, and occupied by fluid."})
+
+
+CREATE (T18:GO_TERM:CELLULAR_COMPONENT{Name:"plasma membrane",ID:"GO:0005886",Synonyms:"cell membrane, cellular membrane",Definition:"The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins."})
+
+
+CREATE (T19:GO_TERM:CELLULAR_COMPONENT{Name:"plasma membrane ATP synthesis coupled electron transport",ID:"GO:0042774",Synonyms:"None",Definition:"The transfer of electrons through a series of electron donors and acceptors, generating energy that is ultimately used for synthesis of ATP in the plasma membrane."})
+
+
+CREATE (T24:GO_TERM:CELLULAR_COMPONENT{Name:"cell surface",ID:"GO:0009986",Synonyms:"cell associated, cell bound",Definition:"The external part of the cell wall and/or plasma membrane." })
+
+
+CREATE (cytosol:GO_TERM:CELLULAR_COMPONENT{Name:"cytosol",ID:"GO:0005829",Synonyms:"None",Definition:"The part of the cytoplasm that does not contain organelles but which does contain other particulate matter, such as protein complexes. "})
+
+
+//Relationships with organism
+
+
+CREATE(BamE)-[:Comes_from]->(Ecoli)
+CREATE(caiB)-[:Comes_from]->(Ecoli)
+CREATE(polA)-[:Comes_from]->(Ecoli)
+CREATE (G1)-[:Comes_from]->(O1)
+CREATE (G3)-[:Comes_from]->(O1)
+CREATE (G1)-[:Comes_from]->(O2)
+CREATE (G5)-[:Comes_from]->(O1)
+CREATE (polH)-[:Comes_from]->(O1)
+
+
+//Relationships between GO terms
+CREATE(L_carnitine_CoA_transferas_activity)-[:is_a]->(catalytic_activity)
+CREATE(periplasmic_side)-[:Part_of]->(Bam_protein_complex)
+CREATE(DNA_polymerase_activity)-[:is_a]->(catalytic_activity)
+
+
+
+
+//Relationships with biological process
+CREATE (BamE)-[:Involved_in {Evidence: "IBA", Evidence_with: ["PANTHER:PTN002444745", "UniProtKB:P0A937"], Reference_Title: "Phylogenetic-based propagation of functional annotations within the Gene Ontology consortium", Reference_PMID: "PMID:21873635"}]->(protein_insertion_inmembrane)
+CREATE(caiB)-[:Involved_in{Evidence: "EXP",Evidence_with: "None",Reference_Title: "Cloning, nucleotide sequence, and expression of the Escherichia coli gene encoding carnitine dehydratase.",Reference_PMID: "PMID:8188598"}]->(carnitine_catabolic_process)
+CREATE(polA)-[:Involved_in{Evidence: "IEA",Evidence_with: "InterPro:IPR002562",Reference_Title: "None",Reference_PMID: "GO_REF:0000002"}]->(DNA_metabolic_process)
+
+
+
+
+//Relationships with molecular function
+CREATE(BamE)-[:Involved_in{Evidence: "IPI",Evidence_with: "UniProtKB:P0AC02",Reference_Title: "Structure and function of BamE within the outer membrane and the β-barrel assembly machine.",Reference_PMID: "PMID:21212804"}
+]->(cardiolipin_binding)
+CREATE(caiB)-[:Involved_in{Evidence: "IEA",Evidence_with: "None",Reference_Title: "Molecular characterization of the cai operon necessary for carnitine metabolism in Escherichia coli.",Reference_PMID: "PMID:7815937"}]->(L_carnitine_CoA_transferas_activity)
+CREATE(polA)-[:Involved_in{Evidence: "IBA",Evidence_with: "PANTHER:PTN000015249",Reference_Title: "Phylogenetic-based propagation of functional annotations within the Gene Ontology consortium.",Reference_PMID: "PMID:21873635"}]->(DNA_polymerase_activity)
+
+
+//Relationships with cellular component
+CREATE (BamE)-[:Involved_in {Evidence: "IBA", Evidence_with: "PANTHER:PTN002444745,UniProtKB:P0A937", Reference_Title: "Phylogenetic-based propagation of functional annotations within the Gene Ontology consortium", Reference_PMID: "PMID:21873635"}]->(periplasmic_side)
+
+
+CREATE(caiB)-[:Involved_in{Evidence: "IEA",Evidence_with: "UniProtKB-KW:KW-0963",Reference_Title: "None",Reference_PMID: "GO_REF:0000104"}]->(cytoplasm)
+
+
+CREATE(polA)-[:Involved_in{Evidence: "IDA",Evidence_with: "None",Reference_Title: "Protein abundance profiling of the Escherichia coli cytosol",Reference_PMID: "PMID:18304323"}]->(cytoplasm)
+
+
+
+
+CREATE (T1)-[:is_a]->(T2)
+CREATE (G1)-[:Involved_in{Evidence:"IEA",Evidence_with:"UniProtKB:P16599",Reference_PMID:"GO_REF:0000107",Reference_title:"None"} ]->(T1)
+CREATE (T3)<-[:Involved_in{Evidence:"IDA",Evidence_with:"None",Reference_PMID:"PMID:19032770",Reference_title:"Interleukin-1beta and tumour necrosis factor-alpha impede neutral lipid turnover in macrophage-derived foam cells."}]-(G1)
+CREATE (G1)-[:Involved_in{Evidence:"IEA",Evidence_with:"UniProtKB:P06804",Reference_PMID:"GO_REF:000010",Reference_title:"None"}]->(T4)
+CREATE (T5)<-[:is_a]-(T4)
+CREATE (G3)-[:Involved_in{Evidence:"IBA", Evidence_with:"PANTHER:PTN001456007,
+UniProtKB:P16581",Reference_PMID:"PMID:21873635",Reference_title:"Phylogenetic-based propagation of functional annotations within the Gene Ontology consortium"}]->(T7)
+CREATE (T8)<-[:Involved_in{Evidence:"TAS", Evidence_with:"None",Reference_PMID:"PMID:10747985",Reference_title:"An activated L-selectin mutant with conserved equilibrium binding properties but enhanced ligand recognition under shear flow."}]-(G3)
+CREATE (T9)-[:Capable_of]->(T8)
+CREATE (G3)-[:Involved_in{Evidence:"IMP", Evidence_with:"None",Reference_PMID:"PMID:28011641",Reference_title:"Glycan Bound to the Selectin Low Affinity State Engages Glu-88 to Stabilize the High Affinity State under Force."}]->(T10)
+CREATE (T10)-[:Part_of]->(T11)
+CREATE (G3)-[:Involved_in{Evidence:"IDA", Evidence_with:"None",Reference_PMID:" PMID:28011641",Reference_title:"Glycan Bound to the Selectin Low Affinity State Engages Glu-88 to Stabilize the High Affinity State under Force."}]->(T12)
+CREATE (G5)-[:Involved_in{Evidence:"IPI", Evidence_with:"None",Reference_PMID:"PMID:19296670",Reference_title:"Crystal structure of human fibrinogen."}]->(T12)
+CREATE (G5)-[:Involved_in{Evidence:"IDA", Evidence_with:"None",Reference_PMID:" PMID:19296670",Reference_title:"Crystal structure of human fibrinogen."}]->(T13)
+CREATE (G1)-[:Involved_in{Evidence:"IDA", Evidence_with:"None",Reference_PMID:" PMID:12594207",Reference_title:"Lipoteichoic acid (LTA) of Streptococcus pneumoniae and Staphylococcus aureus activates immune cells via Toll-like receptor (TLR)-2, lipopolysaccharide-binding protein (LBP), and CD14, whereas TLR-4 and MD-2 are not involved."}]->(T13)
+CREATE (G5)-[:Involved_in{Evidence:"IDA", Evidence_with:"None",Reference_PMID:" PMID:16846481",Reference_title:"The fibrinogen Aalpha R16C mutation results in fibrinolytic resistance."}]->(T14)
+CREATE (T14)-[:is_a]->(T15)
+CREATE (G3)-[:Involved_in{Evidence:"IDA",Evidence_with:"None",Reference_PMID:"PMID:2663882",Reference_title:"Characterization of a human homologue of the murine peripheral lymph node homing receptor."}]->(T18)
+CREATE (T19)-[:Occurs_in]->(T18)
+
+
+CREATE (G1)-[:Involved_in{Evidence:"IDA",Evidence_with:"None",Reference_PMID:"PMID:10748004",Reference_title:"A phosphatidylinositol 3-kinase/Akt pathway, activated by tumor necrosis factor or interleukin-1, inhibits apoptosis but does not activate NFkappaB in human endothelial cells."}]->(T21)
+CREATE (G1)-[:Involved_in{Evidence:"IPI",Evidence_with:"UniProtKB:P01375",Reference_PMID:"PMID:2922050",Reference_title:"Structure of tumour necrosis factor."}]->(T22)
+CREATE (T21)-[:is_a]->(T23)
+CREATE (G1)-[:Involved_in{Evidence:"IDA",Evidence_with:"None",Reference_PMID:"PMID:18355445",Reference_title:"Ectodomain shedding of TNF-alpha is enhanced by nardilysin via activation of ADAM proteases."}]->(T24)
+CREATE (DNA_metabolic_process)<-[:is_a]-(DNA_replication)
+CREATE (polH)-[:Involved_in{Evidence:"IEA",Evidence_with:"UniProtKB-KW:KW-0235",Reference_PMID:"GO_REF:0000043  ",Reference_title:"None"}]->(DNA_replication)
+CREATE (polH)-[:Involved_in{Evidence:"IBA",Evidence_with:"PANTHER:PTN000117879",Reference_PMID:"PMID:21873635",Reference_title:"Phylogenetic-based propagation of functional annotations within the Gene Ontology consortium."}]->(DNA_directed_DNA_polymerase_activity)-[:is_a]->(DNA_polymerase_activity)
+CREATE (polH)-[:Involved_in{Evidence:"IDA",Evidence_with:"None",Reference_PMID:"GO_REF:0000052",Reference_title:"None"}]->(cytosol)-[:Part_of]->(cytoplasm)
+
+
+RETURN *
+
